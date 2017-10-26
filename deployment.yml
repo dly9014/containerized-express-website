@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: containerized-express-website-depl2
+  labels:
+    #Project ID
+    app: containerized-express-website
+spec:
+  #Run two instances of our application
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: containerized-express-website
+    spec:
+      #Container details
+      containers:
+        - name: node-app
+          image: gcr.io/containerized-express-website/node-app:0.0.1
+          imagePullPolicy: Always
+          #Ports to expose
+          ports:
+          - containerPort: 8000

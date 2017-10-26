@@ -1,0 +1,23 @@
+{
+  "name": "containerized-express-website",
+  "version": "1.0.0",
+  "description": "This is a work in progress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dly9014/containerized-express-website.git"
+  },
+  "author": "Dana Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dly9014/containerized-express-website/issues"
+  },
+  "homepage": "https://github.com/dly9014/containerized-express-website#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
