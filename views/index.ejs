@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+<%= new Date()%>
+<ul>
+    <%for (var i = 0; i < model.length; i++) { %>
+        <li><%= model[i].id %> <%= model[i].name %> $<%= model[i].price %></li>
+    <% } %>
+</ul>
+</body>
+</html>
